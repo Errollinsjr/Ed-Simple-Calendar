@@ -1,5 +1,9 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  background-image: url("./nice-background.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1;
 }
@@ -14,7 +18,7 @@ textarea {
 }
 
 .jumbotron {
-  text-align: center;
+  text-align: left;
   background-color: transparent;
   color: black;
   border-radius: 0;
@@ -68,4 +72,14 @@ textarea {
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+}
+
+.notification {
+  display: none;
+  padding-bottom: 10px;
+  color: black;
+}
+
+.show {
+  display: block;
 }
