@@ -18,9 +18,14 @@ textarea {
 }
 
 .jumbotron {
+  width: 500px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+  font-weight: bold;
   text-align: left;
-  background-color: transparent;
-  color: black;
+  background-color: rgb(87, 91, 92);
+  color: rgb(223, 238, 16);
   border-radius: 0;
   border-bottom: 10px solid black;
 }
@@ -67,6 +72,17 @@ textarea {
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
+}
+
+#clearBtn {
+  background: radial-gradient(
+    circle,
+    rgba(240, 230, 140, 1) 0%,
+    rgba(187, 96, 33, 0.9542191876750701) 100%
+  );
+  border-radius: 8px;
+  color: #13293d;
+  cursor: pointer;
 }
 
 .saveBtn i:hover {

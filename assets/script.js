@@ -45,21 +45,22 @@ $(document).ready(function () {
     var interval = setInterval(hourUpdater, 15000);
   
     // load any saved data from localStorage
-    $('#hour-9 .description').val(localStorage.getItem('hour-9'));
-    $('#hour-10 .description').val(localStorage.getItem('hour-10'));
-    $('#hour-11 .description').val(localStorage.getItem('hour-11'));
-    $('#hour-12 .description').val(localStorage.getItem('hour-12'));
-    $('#hour-13 .description').val(localStorage.getItem('hour-13'));
-    $('#hour-14 .description').val(localStorage.getItem('hour-14'));
-    $('#hour-15 .description').val(localStorage.getItem('hour-15'));
-    $('#hour-16 .description').val(localStorage.getItem('hour-16'));
-    $('#hour-17 .description').val(localStorage.getItem('hour-17'));
-  
+    $('#hour-9am .description').val(localStorage.getItem('hour-9am'));
+    $('#hour-10am .description').val(localStorage.getItem('hour-10am'));
+    $('#hour-11am .description').val(localStorage.getItem('hour-11am'));
+    $('#hour-12pm .description').val(localStorage.getItem('hour-12pm'));
+    $('#hour-1pm .description').val(localStorage.getItem('hour-1pm'));
+    $('#hour-2pm .description').val(localStorage.getItem('hour-2pm'));
+    $('#hour-3pm .description').val(localStorage.getItem('hour-3pm'));
+    $('#hour-4pm .description').val(localStorage.getItem('hour-4pm'));
+    $('#hour-5pm .description').val(localStorage.getItem('hour-5pm'));
+
     // display current day on page
-    // $('#currentDay').text(moment().format('dddd, MMMM Do'));
-  });
+    $("#currentTime").text(timeNow.format('MMMM Do YYYY, h:mm:ss a'));
   
-  // display current time
+});
+  
+// display current time
 function displayTime(){
 
     var timeNow = moment();
@@ -71,3 +72,10 @@ function displayTime(){
     $(document).ready(function() {
         displayTime();
     });
+
+
+//  clear storage & rerender table
+function clearCalendar() {
+    localStorage.clear();
+    window.location.reload();
+}    
