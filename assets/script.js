@@ -78,4 +78,5 @@ function displayTime(){
 function clearCalendar() {
     localStorage.clear();
     window.location.reload();
-}    
+}
+    
